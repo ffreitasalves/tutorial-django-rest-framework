@@ -32,8 +32,8 @@ class SnippetDetail(mixins.RetrieveModelMixin, mixins.UpdateModelMixin, mixins.D
     def get(self, request, *args, **kwargs):
         return self.retrieve(request, *args, **kwargs)
 
-    def put(self, request, pk, format = None):
+    def put(self, request, *args, **kwargs):
         return self.update(request, *args, **kwargs)
 
-    def delete(self, request, pk, format=None):
+    def delete(self, request, *args, **kwargs):
         return self.destroy(request, *args, **kwargs)
